@@ -12,14 +12,23 @@ Simulation A uses the self-tuning hyperparameter for ammonium bicarbonate excret
 Both simulation B and C use the same code. The only difference is the inclusion of the pyruvate from PEPCK metabolism for simulation C. The model has multiple self-tuning hyperparameters which will be described in greater detail below:
 
 Hyperparameter 1: Scaling of the proton production from anaerobic metabolism. 
+
 Hyperparameter 2: Rate constant of the excretion of ammonium. 
+
 Hyperparameter 3: Enzymatic activity rate of carbonic anhydrase. 
+
 Hyperparameter 4: Determines the strength of the inhibitory effects of dropping pH on the aerobic respiration. 
+
 Hyperparameter 5: Determines the strength of the inhibitory effects of carbon dioxide upon aerobic respiration. 
+
 Hyperparameter 6: Determines the strength of the hyperparameter 4 and 5. 
+
 Hyperparameter 7: Determines the midpoint at which the proton:carbon dioxide balance is predictive of 50% anaerobic respiration. 
+
 Hyperparameter 8: Determined the aspartate dose needed to achieve the minimal anaerobic:aerobic respiration rate. 
+
 Hyperparameter 9: Determined the effectiveness of aspartate upon the ammonium excretion. The effect is given as a percentage in the study by the formula = rate of kidney excretion of NH4(1 + hyperparameter 9). 
+
 Hyperparameter 10: Determined the effectiveness of aspartate upon the aerobic metabolism fraction. The effect is given as a percentage in the study by the formula = 0.5/(1 + hyperparameter 10) where 0.5 is the half way point between anaerobic and aerobic metabolism.  
 
 The full detail is in the script. 
