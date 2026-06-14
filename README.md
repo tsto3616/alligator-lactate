@@ -19,8 +19,8 @@ Hyperparameter 5: Determines the strength of the inhibitory effects of carbon di
 Hyperparameter 6: Determines the strength of the hyperparameter 4 and 5. 
 Hyperparameter 7: Determines the midpoint at which the proton:carbon dioxide balance is predictive of 50% anaerobic respiration. 
 Hyperparameter 8: Determined the aspartate dose needed to achieve the minimal anaerobic:aerobic respiration rate. 
-Hyperparameter 9: Determined the effectiveness of aspartate upon the ammonium excretion (fill in formula)
-Hyperparameter 10: Determined the effectiveness of aspartate upon the aerobic metabolism fraction (fill in formula). 
+Hyperparameter 9: Determined the effectiveness of aspartate upon the ammonium excretion. The effect is given as a percentage in the study by the formula = rate of kidney excretion of NH4(1 + hyperparameter 9). 
+Hyperparameter 10: Determined the effectiveness of aspartate upon the aerobic metabolism fraction. The effect is given as a percentage in the study by the formula = 0.5/(1 + hyperparameter 10) where 0.5 is the half way point between anaerobic and aerobic metabolism.  
 
 The full detail is in the script. 
 
