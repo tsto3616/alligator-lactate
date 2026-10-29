@@ -1247,6 +1247,7 @@ for ex_name in EXERTION_LEVELS.keys():
 
 ax1.set_xlabel("Time (min)")
 ax1.set_ylabel("Lactate total (µmol/g)", color="black")
+ax1.set_ylim(6, 7.4)
 ax1.tick_params(axis='y', labelcolor="black")
 
 # -----------------------------
@@ -1276,6 +1277,7 @@ for ex_name in EXERTION_LEVELS.keys():
                      alpha=0.10)
 
 ax2.set_ylabel("Blood pH", color="black")
+ax2.set_ylim(6, 11)
 ax2.tick_params(axis='y', labelcolor="black")
 
 # -----------------------------
