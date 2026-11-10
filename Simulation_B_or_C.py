@@ -8,9 +8,9 @@ from scipy.optimize import differential_evolution
 # =========================
 # 1. LOAD DATA
 # =========================
-metabolite_table = pd.read_excel("compartments.xlsx", sheet_name="metabolites")
-rxn_df           = pd.read_excel("compartments.xlsx", sheet_name="meta-enzymes")
-enzyme_df        = pd.read_excel("compartments.xlsx", sheet_name="enzymes")
+metabolite_table = pd.read_excel("SIM_C_data.xlsx", sheet_name="metabolites")
+rxn_df           = pd.read_excel("SIM_C_data.xlsx", sheet_name="meta-enzymes")
+enzyme_df        = pd.read_excel("SIM_C_data.xlsx", sheet_name="enzymes")
 
 # Normalize GDH names so both NAD and NADP variants map to one enzyme
 gdh_aliases = {

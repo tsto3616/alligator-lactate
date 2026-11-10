@@ -7,9 +7,9 @@ from scipy.optimize import minimize
 # =========================
 # 1. LOAD DATA
 # =========================
-metabolite_table = pd.read_excel("compartments.xlsx", sheet_name="metabolites")
-rxn_df           = pd.read_excel("compartments.xlsx", sheet_name="meta-enzymes")
-enzyme_df        = pd.read_excel("compartments.xlsx", sheet_name="enzymes")
+metabolite_table = pd.read_excel("SIM_A_data.xlsx", sheet_name="metabolites")
+rxn_df           = pd.read_excel("SIM_A_data.xlsx", sheet_name="meta-enzymes")
+enzyme_df        = pd.read_excel("SIM_A_data.xlsx", sheet_name="enzymes")
 
 # Normalize GDH names so both NAD and NADP variants map to one enzyme
 gdh_aliases = {
@@ -926,7 +926,7 @@ for ex_name in EXERTION_LEVELS.keys():
 
 ax1.set_xlabel("Time (min)")
 ax1.set_ylabel("Lactate total (µmol/g)", color="black")
-ax2.set_ylim(6, 7.4)
+ax1.set_ylim(6, 7.4)
 ax1.tick_params(axis='y', labelcolor="black")
 
 # -----------------------------
